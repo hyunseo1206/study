@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>내 시간표 만들기</title>
+        <meta keyword = "schedule">
+        <meta charest = "UTF-8">
+
+        <style type="text/css">
+            #book caption {font-size: 18pt; font-weight:bolder ; margin: 0.5em;}
+            .ca {background: aqua}
+            .mp {background: pink}
+            .da {background: lime}
+            .web {background: fuchsia}
+            .mi {background: green}
+        </style>
+    </head>
+
+    <body>
+        <table border = "1" style="text-align:center;" id="book">
+            <caption>시간표</caption>
+            <tr>
+                <th width="120px" style="background-color: skyblue;">교시</th>
+                <th width="120px" style="background-color: skyblue;">월</th> 
+                <th width="120px" style="background-color: skyblue;">화</th>
+                <th width="120px" style="background-color: skyblue;">수</th>
+                <th width="120px" style="background-color: skyblue;">목</th>
+                <th width="120px" style="background-color: skyblue;">금</th> 
+            </tr>
+            <tr>
+                <td><strong>1</strong></td>
+                <td></td>
+                <td></td>
+                <td rowspan="3" class="da">자료구조와알고리즘</td>
+                <td></td>
+                <td rowspan="3" class="mp">모바일프로그래밍</td>
+            </tr>
+            <tr>
+                <td><strong>2</strong></td>
+                <td></td> <td rowspan="2" class="ca">컴퓨터응용</td>
+                <td rowspan="2" class="web">웹프로그래밍</td>
+            </tr>
+            <tr>
+                <td><strong>3</strong></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>4</strong></td>
+                <td colspan="5">점심시간</td>
+            </tr>
+            <tr>
+                <td><strong>5</strong></td>
+                <td rowspan="2" class="mi">멀티미디어 개론</td>
+                <td rowspan="3" class="mp">모바일프로그래밍</td>
+                <td></td>
+                <td></td>
+                <td rowspan="2" class="ca">컴퓨터응용</td>
+            </tr>
+            <tr>
+                <td><strong>6</strong></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>7</strong></td>
+                <td></td> 
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

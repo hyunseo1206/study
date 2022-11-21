@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>playlist</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body { font-family: garamond; text-align: center; width: 1500px }
+			header, footer, nav, aside, section { margin: 5px; padding: 10px }
+			header { height: 20px; width: 1465px; padding: 8px; margin-bottom: 60px;  margin-top: 30px;
+				font-size: 25pt; font-weight: bold; font-style: italic }
+			header a:link { color: #616161; text-decoration: none }
+			header a:visited { color: #616161; text-decoration: none }
+			nav { width: 1465px; height: 40px }
+			ul { list-style-type: none }
+			ul:after { content:' '; display: block; clear: both }
+			li { margin-left: 60px; margin-right: 60px; float: left; line-height: 30px; 
+				vertical-align: middle; text-align: center }
+			li a { display: block; text-align: center; padding: 16px; text-decoration: none;
+				width: 200px; font-size: 15pt; font-weight: bold; background-color: #f7f7f7 }
+			li a:hover { color: white; background-color: #787878 }
+			section { margin-top: 50px; margin-bottom: 50px }
+			section table { border-spacing: 20px 5px }
+			#click { color: #5b5b5b; margin-bottom: 40px }
+			#∞ { font-size: 10pt }
+			th { font-size: 10pt }
+			aside { width: 1465px; background-color: #f2f2f2; font-size: 12pt; font-weight: bold;
+				 border-radius: 10px }
+			#pic { font-size: 20pt; font-style: italic }
+			footer { height: 50px; position: relative; clear: both; font-style: italic; font-size: 11pt; margin-top: 100px }
+			a:link { text-decoration: none; color: #6e6e6e }
+			a:visited { text-decoration: none; color: #6e6e6e }
+			table { border-spacing: 5px }
+			
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function con() {
+				return confirm("Are you curious about my food life?");
+			}
+
+			function mouseover_cl() {
+				document.getElementById("list").innerHTML =
+				"<p>전소미 / 데이식스 / 여자아이들/ 자우림 / 볼빨간사춘기 / NCT Dream / 블랙핑크 / 리쌍 / 규현</p>" + 
+				"<p>STAYC / 더보이즈 / 인피니트 / 르세라핌 / 레드벨벳 / 아이브 / GOT the beat / 악동뮤지션 / 티키틱</p>" + 
+				"<p>최예나 / NMIXX / 케플러 / 이달의소녀 / 다비치 / 아이유 / 헤이즈 / 지코 / 비스트 / 세븐틴 / f(x)</p><br>";
+			}
+
+			function mouseout_cl() {
+				document.getElementById("list").innerHTML = "";
+			}
+		</script>
+		<header>
+			<a href="main.html" title="HyunSeo">&nbsp;&nbsp;&nbsp; Hi, I'm HyunSeo.</a>
+		</header>
+		<center>
+            <nav>
+                <ul>
+                    <li><a href="nonogram.html" title="Nonogram">Nonogram</a></li>
+                    <li><a href="my love.html" title="My love">My love</a></li>
+                    <li><a href="my playlist.html" title="Playlist">Playlist</a></li>
+                    <li><a href="food.html" title="Food"
+                        onclick="return con();">Food</a></li>
+                </ul>
+            </nav>
+		</center>
+		<section>
+			<article>
+				<h3><p id="click" onmouseover=mouseover_cl() onmouseout=mouseout_cl()>My Playlist _ <span id="∞">30 / ∞</p></h3>
+				<p id="list"></p>
+			</article>
+			<article>
+				<center>
+				<table border="0">
+					<tr>
+						<th>XOXO - 전소미</th>
+						<th>한 페이지가 될 수 있게 - Day6</th>
+						<th>MY BAG - (여자)아이들</th>
+					</tr>
+					<tr>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/1JqDceksl9Y"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/-iSI1Cmyhwk"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253"
+						src="https://www.youtube.com/embed/hH-xYxxiUNY"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<th>있지 - 자우림</th>
+						<th>나의 사춘기에게 - 볼빨간사춘기</th>
+						<th>버퍼링 (Glitch Mode) - NCT Dream</th>
+					</tr>
+					<tr>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/a6dwchTCoAI"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/Nmwb0xP889c"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253"
+						src="https://www.youtube.com/embed/JxwyT2zLp7E"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<th>Lovesick Girls - BLACKPINK</th>
+						<th>헤어지지 못하는 여자, 떠나가지 못하는 남자 - 리쌍</th>
+						<th>밀리언 조각 - 규현</th>
+					</tr>
+					<tr>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/cSLTL6BUJcc"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/cPtvGVLuJYo"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253"
+						src="https://www.youtube.com/embed/juL5oCqaMbs"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<th>RUN2U - STAYC</th>
+						<th>THRILL RIDE - THE BOYZ</th>
+						<th>추격자 - 인피니트</th>
+					</tr>
+					<tr>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/hCHp0on-El0"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/XMs2CIiqRDI"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253"
+						src="https://www.youtube.com/embed/RTXmhKapmCI"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<th>FEARLESS - 르세라핌</th>
+						<th>Feel My Rhythm - 레드벨벳</th>
+						<th>LOVE DIVE - IVE</th>
+					</tr>
+					<tr>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/9NuiUBwVDwQ"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/R9At2ICm4LQ"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253"
+						src="https://www.youtube.com/embed/Gm0CM-6Pins"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<th>Step Back - GOT the beat</th>
+						<th>DINOSAUR - AKMU</th>
+						<th>매직 카펫 라이드 - 티키틱</th>
+					</tr>
+					<tr>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/uBY1AoiF5Vo"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/8Oz7DG76ibY"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253"
+						src="https://www.youtube.com/embed/BN3WvuoDN1o"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<th>LxxL 2 U - 최예나</th>
+						<th>O.O - NMIXX</th>
+						<th>WA DA DA - Kep1er</th>
+					</tr>
+					<tr>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/Iwx9t3qTcV4"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/3GWscde8rM8"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253"
+						src="https://www.youtube.com/embed/n0j5NPptyM0"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<th>PTT - 이달의소녀</th>
+						<th>말리지 마 - (여자)아이들</th>
+						<th>두 사랑 - 다비치</th>
+					</tr>
+					<tr>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/_EEo-iE5u_A"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/SuMnpTc8zoU"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253"
+						src="https://www.youtube.com/embed/p0dKKDO3ooc"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<th>Celebrity - IU</th>
+						<th>And July (Feat. DEAN, DJ Friz) - 헤이즈</th>
+						<th>BERMUDA TRIANGLE (Feat. Crush, DEAN) - ZICO</th>
+					</tr>
+					<tr>
+						<td><iframe width="450" height="253" 
+						 src="https://www.youtube.com/embed/0-q1KafFCLU"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/rCeM57e2BfU"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253"
+						src="https://www.youtube.com/embed/ZHoLaLlL5lA"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+					</tr>
+					<tr>
+						<th>Fiction - 비스트</th>
+						<th>HOT - 세븐틴</th>
+						<th>4 Walls - f(x)</th>
+					</tr>
+					<tr>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/ZAzWT8mRoR0"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253" 
+						src="https://www.youtube.com/embed/gRnuFC4Ualw"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+						<td><iframe width="450" height="253"
+						src="https://www.youtube.com/embed/4j7Umwfx60Q"
+						frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</td>
+					</tr>
+				</table>
+				</center>
+			</article>
+		</section>
+		<aside>
+			<P id="pic">MY Favorite Singers</p>
+			<center>
+			<table border="0">
+				<tr>
+					<th><a href="https://www.youtube.com/watch?v=IYo55ma5PaY">The Boyz</a></th>
+					<th><a href="https://www.youtube.com/watch?v=vofjeJvRT9c">NCT dream</a></th>
+					<th><a href="https://www.youtube.com/watch?v=87fKv045u5U">LOONA</a></th>
+					<th><a href="https://www.youtube.com/watch?v=--FmExEAsM8">IVE</a></th>
+					<th><a href="https://www.youtube.com/watch?v=uR8Mrt1IpXg">Red Velvet</a></th>
+					<th><a href="https://www.youtube.com/watch?v=HPQ5mqovXHo">(G)-IDLE</a></th>
+					<th><a href="https://www.youtube.com/watch?v=BS7tz2rAOSA">DAY6</a></th>
+				</tr>
+				<tr>
+					<td><a href="https://www.youtube.com/watch?v=IYo55ma5PaY">
+						<img src="theboyz.jpg" alt="TheBoyz" 
+						width="200" height="200" aling="center"></a>
+					</td>
+					<td><a href="https://www.youtube.com/watch?v=vofjeJvRT9c">
+						<img src="nctdream.jpg"NCTdream 
+						width="200" height="200" aling="center"></a>
+					</td>
+					<td><a href="https://www.youtube.com/watch?v=87fKv045u5U">
+						<img src="loona.png" alt="LOONA" 
+						width="200" height="200" aling="center"></a>
+					</td>
+					<td><a href="https://www.youtube.com/watch?v=--FmExEAsM8">
+						<img src="ive.jpg" alt="IVE" 
+						width="200" height="200" aling="center"></a>
+					</td>
+					<td><a href="https://www.youtube.com/watch?v=uR8Mrt1IpXg">
+						<img src="red.jpg" alt="redvelvet" 
+						width="200" height="200" aling="center"></a>
+					</td>
+					<td><a href="https://www.youtube.com/watch?v=HPQ5mqovXHo">
+						<img src="idle.jpeg" alt="idle" 
+						width="200" height="200" aling="center"></a>
+					</td>
+					<td><a href="https://www.youtube.com/watch?v=BS7tz2rAOSA">
+						<img src="day6.jpg" alt="day6" 
+						width="200" height="200" aling="center"></a>
+					</td>
+				</tr>
+			</table>
+			</center>
+		</aside>
+		<footer>created by iioflul<br>
+			<a href="https://www.instagram.com/iioflul/">@iioflul</a>
+		</footer>
+	</body>
+</html>

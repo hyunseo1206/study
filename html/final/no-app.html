@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nonogram - App</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body { font-family: garamond; text-align: center; width: 1500px }
+			header, footer, nav, aside, section { margin: 5px; padding: 10px }
+			header { height: 20px; width: 1465px; padding: 8px; margin-bottom: 60px; margin-top: 30px;
+				font-size: 25pt; font-weight: bold; font-style: italic; color: #616161 }
+			form { font-size: 10pt; padding: 10px }
+			nav { width: 1465px; height: 40px }
+			ul { list-style-type: none }
+			ul:after { content:' '; display: block; clear: both }
+			li { margin-left: 60px; margin-right: 60px; float: left; line-height: 30px; 
+				vertical-align: middle; text-align: center }
+			li a { display: block; text-align: center; padding: 16px; text-decoration: none;
+				width: 200px; font-size: 15pt; font-weight: bold; background-color: #f7f7f7 }
+			li a:hover { color: white; background-color: #787878 }
+			audio { position: fixed; top: 650px; right: 10px; width: 200px; }
+			section { margin-top: 50px }
+			#click { color: #5b5b5b }
+			#box1 { position: relative; width: 1000px; margin-top: 20px; margin-left: 250px; margin-right: 250px }
+			#box2 { position: absolute; top: 320px; left: 300px; font-size: 25pt }
+			#box3 { font-size: 15pt }
+			#app { font-style: italic; font-weight: bold; color: #000000; }
+			#box2 p { font-size: 17pt; width: 940px }
+			#box2 img { border-radius: 25px }
+			#another { font-size: 8pt; font-style: italic }
+			footer { height: 50px; position: relative; clear: both; font-style: italic; font-size: 11pt; }
+			a:link { text-decoration: none; color: #6e6e6e }
+			a:visited { text-decoration: none; color: #6e6e6e }
+			
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function con() {
+				return confirm("Are you curious about my food life?");
+			}
+		</script>
+		<audio loop controls src="Snow White.mp3"></audio> 
+
+		<header>
+			<a href="main.html" title="HyunSeo">&nbsp;&nbsp;&nbsp; Hi, I'm HyunSeo.</a>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="nonogram.html" title="Nonogram">Nonogram</a></li>
+				<li><a href="my love.html" title="My love">My love</a></li>
+				<li><a href="my playlist.html" title="Playlist">Playlist</a></li>
+				<li><a href="food.html" title="food"
+					onclick="return con();">food</a></li>
+			</ul>
+		</nav>
+		<section>
+			<article>
+				<p id="click">Click on the field you want to know</p>
+			</article>
+			<article id="art2">
+				<div id="imgbox">
+					<div id="box1">
+						<img src="sky.jpg" alt="sky img" width=1000>
+					</div>
+					<div id="box2">
+						<a href="no-intro.html" id="box3" title="Introduction">Introduction&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						<a href="no-his.html" id="box3" title="History">History&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						<a href="no-sol.html" id="box3" title="Solution">Solution&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						<a href="no-why.html" id="box3" title="Why">Why&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						<a href="no-app.html" id="box3" title="App">App</a>
+						<br><br><a href="https://apps.apple.com/kr/app/%EB%A3%A8%EB%82%98-%EC%9D%B4%EC%95%BC%EA%B8%B0-%EB%85%B8%EB%85%B8%EA%B7%B8%EB%9E%A8-%EB%84%A4%EB%AA%A8%EB%A1%9C%EC%A7%81/id1535919198"
+							 id="app" title="App"><h3>My favorite app</h3></a>
+						<p><br>Click on <strong>"My favorite app"</strong> above or the <strong>picture</strong> below.<br><br></p>
+						<a href="https://apps.apple.com/kr/app/%EB%A3%A8%EB%82%98-%EC%9D%B4%EC%95%BC%EA%B8%B0-%EB%85%B8%EB%85%B8%EA%B7%B8%EB%9E%A8-%EB%84%A4%EB%AA%A8%EB%A1%9C%EC%A7%81/id1535919198">
+						<img src="nonogram.jpeg" alt="네모로직" width="100" height="100"></a>
+					</div>
+				</div>
+			</article>
+		</section>
+		<footer>created by iioflul<br>
+			<a href="https://www.instagram.com/iioflul/">@iioflul</a>
+		</footer>
+	</body>
+</html>

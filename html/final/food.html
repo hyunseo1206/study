@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Food</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body { font-family: garamond; text-align: center; width: 1500px }
+			header, footer, nav, aside, section { margin: 5px; padding: 10px }
+			header { height: 20px; width: 1465px; padding: 8px; margin-bottom: 60px; margin-top: 30px;
+				font-size: 25pt; font-weight: bold; font-style: italic; color: #616161 }
+			form { font-size: 10pt; padding: 10px }
+			nav { width: 1465px; height: 40px }
+			ul { list-style-type: none }
+			ul:after { content:' '; display: block; clear: both }
+			li { margin-left: 60px; margin-right: 60px; float: left; line-height: 30px; 
+				vertical-align: middle; text-align: center }
+			li a { display: block; text-align: center; padding: 16px; text-decoration: none;
+				width: 200px; font-size: 15pt; font-weight: bold; background-color: #f7f7f7 }
+			li a:hover { color: white; background-color: #787878 }
+			audio { position: fixed; top: 650px; right: 10px; width: 200px; }
+			section { margin-top: 50px }
+			#click { color: #949494; font-size: 25pt; font-family: garamond; font-style: italic; margin-bottom: 50px; }
+			#small { font-size: 12pt }
+			#com { margin-right: auto;}
+			#box1 { position: relative; width: 1000px; margin-top: 20px; margin-left: 250px; margin-right: 250px }
+			#box2 { position: absolute; top: 572px; left: 673px; }
+			#box3 { position: absolute; top: 573px; right: 654px; }
+			aside { width: 260px; background-color: #f2f2f2; font-size: 15pt; font-weight: bold;
+				 border-radius: 10px }
+			#another { font-size: 8pt; font-style: italic }
+			footer { height: 50px; position: relative; clear: both; font-style: italic; font-size: 11pt; }
+			a:link { text-decoration: none; color: #6e6e6e }
+			a:visited { text-decoration: none; color: #6e6e6e }
+			
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function mouseover_cl() {
+				click.style.color="black";
+				click.style.transition="all 0.5s";
+
+				document.getElementById("clicknext").innerHTML =
+					"<h3>This is a memory space with pictures of food..</h3>";
+			}
+
+			function mouseout_cl() {
+				click.style.color="#949494";
+
+				document.getElementById("clicknext").innerHTML = "";
+			}
+		</script>
+		<audio autoplay loop controls src="Snow White.mp3"></audio> 
+
+		<header>
+			<a href="main.html" title="HyunSeo">&nbsp;&nbsp;&nbsp; Hi, I'm HyunSeo.</a>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="nonogram.html" title="Nonogram">Nonogram</a></li>
+				<li><a href="my love.html" title="My love">My love</a></li>
+				<li><a href="my playlist.html" title="Playlist">Playlist</a></li>
+				<li><a href="food.html" title="Food"
+					onclick="return con();">Food</a></li>
+			</ul>
+		</nav>
+		<section>
+			<article>
+				<p><span id="click" onmouseover=mouseover_cl() onmouseout=mouseout_cl()><strong>Food Story with HS &nbsp;</strong></span>
+                <span id="small">since 2017</span></p><br>
+				<p id="clicknext"></p>
+			</article>
+			<article>
+				<img src="201206.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">201206 with Dad</p><br><br><br>
+				<img src="210104.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">210104 역전에서 간술!</p><br><br><br>
+				<img src="210510.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">210510 한강에서 예절샷</p><br><br><br>
+				<img src="210520.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">210520 20대 첫 생일</p><br><br><br>
+				<img src="210615.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">210615 첫 아이스박스</p><br><br><br>
+				<img src="211017.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">211017 얼어 죽기 전 만찬</p><br><br><br>
+				<img src="211019.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">211019 내 첫 학식</p><br><br><br>
+				<img src="211022.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">211022 연남 랫댓</p><br><br><br>
+				<img src="211114" alt="Food" width=500 height=500><br>
+				<p id="com">211114 세미 엠티</p><br><br><br>
+				<img src="211223.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">211223 숙초에서 첫 물회</p><br><br><br>
+				<img src="211227.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">211227 음식미닥에서 차우면</p><br><br><br>
+				<img src="220106.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220106 최또술</p><br><br><br>
+				<img src="220111.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220111 콘샐러드 다 내 거</p><br><br><br>
+				<img src="220112.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220112 최또술...ㅋ</p><br><br><br>
+				<img src="220114.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220114 분식은 진리</p><br><br><br>
+				<img src="220116.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220116 고기는 더 진리</p><br><br><br>
+				<img src="220119.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220119 배드민턴 운동 전</p><br><br><br>
+				<img src="220121.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220121 신내떡!</p><br><br><br>
+				<img src="220127.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220127 로즈 친구들과</p><br><br><br>
+				<img src="220130.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220130 간만에 엄마랑 짠</p><br><br><br>
+				<img src="220203.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220203 경주 10원빵</p><br><br><br>
+				<img src="220207.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220207 사진은 어려워...</p><br><br><br>
+				<img src="220208.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220208 카레는 맛있어</p><br><br><br>
+				<img src="220227.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220227 홍곱창에 소주</p><br><br><br>
+				<img src="220304" alt="Food" width=500 height=500><br>
+				<p id="com">220304 역시...! 육회는 진리</p><br><br><br>
+				<img src="220306.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220306 정윤이와 함께한 디저트</p><br><br><br>
+				<img src="220319.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220319 초밥은 은근 배불러</p><br><br><br>
+				<img src="220324.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">처음으로 매장에서 먹은 삼카~</p><br><br><br>
+				<img src="220410.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220410 경성카츠, 돈가스를 좋아한다면 무조건.</p><br><br><br>
+				<img src="220415.jpg" alt="Food" width=500 height=500><br>
+				<p id="com">220415 설빙은 망고가 진리</p><br><br><br>
+			</article>
+		</section>
+		<footer>created by iioflul<br>
+			<a href="https://www.instagram.com/iioflul/">@iioflul</a>
+		</footer>
+	</body>
+</html>

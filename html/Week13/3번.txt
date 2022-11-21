@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>드래그</title>
+        <meta charset = "UTF-8">
+        <meta keyword = "드래그"> 
+  </head>
+  
+  <body>
+    <div id="item" style="width:1200px; height:200px; padding:5px; border:1px solid; margin:10px;">
+        <img id = "notebook" src = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20091019_297%2Fmathzodiac_1255919095002J6zVQ_jpg%2Fdsc_4732_mathzodiac.jpg&type=sc960_832"
+         style = "width: 200px; height: 200px;" draggable = "true"> 
+        <img id = "planner" src = "https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20211127_9%2F1637940329402bXBCG_JPEG%2F39076109117906329_862868283.jpg&type=sc960_832" 
+        style = "width: 200px; height: 200px;" draggable = "true"> 
+        <img id = "ipad" src = "https://search.pstatic.net/sunny/?src=https%3A%2F%2Fcdn.funshop.co.kr%2Fproducts%2F0000180927%2Fvs_image800.jpg&type=sc960_832" 
+        style = "width: 200px; height: 200px;" draggable = "true"> 
+        <img id = "book" src = "http://image.yes24.com/momo/TopCate907/MidCate003/90623531.jpg" 
+        style = "width: 200px; height: 200px;" draggable = "true"> 
+        <img id = "mask" src = "https://search.pstatic.net/common/?src=https%3A%2F%2Fsearchad-phinf.pstatic.net%2FMjAyMjA0MjVfOTUg%2FMDAxNjUwODU2NTA2Nzg1.HM2dw83Mp7JfvFFHWtWPJMxballR9MTHwnMYr2-dUdEg._orHuX_utEoJGNk7NjSzz1aR8XnBZY1irszHzO_JeQwg.PNG%2F2124532-44df23e2-37c9-40a0-bdfc-0f2b2c204692.png&type=f300_300&quality=80" 
+        style = "width: 200px; height: 200px;" draggable = "true"> 
+    </div>
+    
+    <p>&nbsp;&nbsp;학교에 갈 준비를 해 볼까요? 필요한 물건을 가방 안으로 넣어 주세요!</p>
+    <div id="bag" style="width:1200px; height:200px; padding:5px; border:1px solid; margin:10px;">
+        
+    </div>
+    
+    <script type="text/javascript">
+        var src = document.getElementById("item"),
+        srcId,
+        target = document.getElementById("bag");
+
+        src.ondragstart = function(e) {
+            srcId = e.target.id;
+            e.dataTransfer.setData("text", srcId);
+        }
+        target.ondragenter = function(e) {
+            dropId = e.target.id;
+        }
+        target.ondragover = function(e) {
+            e.preventDefault();
+        }
+        target.ondrop = function(e) {
+            var data = e.dataTransfer.getData("text");
+            e.target.appendChild(document.getElementById(data));
+        }
+    </script>
+  </body>
+</html>

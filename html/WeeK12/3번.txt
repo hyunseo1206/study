@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>고양이 카페 사이트 만들기</title>
+        <meta keyword = "고양이 카페 사이트 만들기">
+        <meta charset = "UTF-8">
+        <style type="text/css">
+            #name1 {text-align: center;}
+            #name2 {text-align: center;}
+            #name3 {text-align: center;}
+        </style>
+    </head>
+
+    <body>
+        <h3 style="text-align: center;">고양이 카페에 오신 것을 환영합니다!</h3>
+        <p style="text-align: center;">고양이에게 예쁜 이름을 지어 주세요!
+        </br>고양이 사진을 클릭하면 이름을 입력할 수 있습니다!</p>
+        <table border="1" align="center">
+            <tr>
+                <td>
+                    <figure>
+                        <button type="button" onclick="buttonClick(0)">
+                            <img src = "https://i.pinimg.com/564x/72/df/11/72df114708a988759d6dca0ff41dc929.jpg" width="250">
+                        </button>
+                    </figure>
+                    <div id = "name1"></div>
+                </td>
+                <td>
+                    <figure>
+                        <button type="button" onclick="buttonClick(1)">
+                            <img src = "https://image-notepet.akamaized.net/resize/620x-/seimage/20190419%2F0a01a9dd0776f65560121fbf6e4920ec.jpg" width="250">
+                        </button>
+                    </figure>
+                    <div id = "name2"></div>
+                </td>
+                <td>
+                    <figure>
+                        <button type="button" onclick="buttonClick(2)">
+                            <img src = "https://i.pinimg.com/originals/da/95/68/da9568b5a183aaa7a70f096e00692558.gif" width="250">
+                        </button>
+                    </figure>
+                    <div id = "name3"></div>
+                </td>
+            </tr>
+        </table>
+        <script type ="text/javascript">
+            var name_arr = ['','',''];
+            function buttonClick(num){
+                var input = prompt("고양이의 이름을 지어주세요.");
+                name_arr[num] = input;
+                
+                var name1 = document.getElementById("name1");
+                var name2 = document.getElementById("name2");
+                var name3 = document.getElementById("name3");
+                var text1 = name_arr[0];
+                var text2 = name_arr[1];
+                var text3 = name_arr[2];
+              
+                name1.innerHTML = text1;
+                name2.innerHTML = text2;
+                name3.innerHTML = text3;
+            }
+        </script>
+    </body>
+</html>

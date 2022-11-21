@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>객체 생성자 함수</title>
+        <meta keyword = "Object generator function">
+        <meta charset = "UTF-8">
+    </head>
+
+    <body>
+        <script type="text/javascript">
+
+            function display_score() {
+                for (i = 0 ; i < s; i++) {
+                    document.write(student[i].name + " : " + student[i].score + "<br>");
+                }
+            }
+
+            function Student (name, score, average) {
+                this.name = name;
+                this.score = score;
+                this.average = average;
+                this.display = display_score;
+            }
+            
+            var s = parseInt(prompt("입력할 학생 수를 입력하여 주세요."));
+            
+            var student=[];
+            for (i = 0; i < s; i++) {
+                name = prompt((i+1)+"번째 학생의 이름을 입력해 주세요.");
+                score = parseInt(prompt("중간고사 성적을 입력하세요."));
+                score += parseInt(prompt("기말고사 성적을 입력하세요."));
+                score /= 2;
+                student.push(new Student(name, score));
+            }
+
+            display_score();
+
+            max =  student[0].score;
+            tem = student[0].name;
+            for (i = 0; i < s; i++) {
+                if(student[i].score > max) {
+                    max = student[i].score
+                    tem = student[i].name
+                    
+                }
+            }
+            document.write("<br> 1등 학생 : " + tem);
+        </script>
+    </body>
+</html>

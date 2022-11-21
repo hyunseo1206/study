@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <!--body 태그 사용해서 수정, id 속성 사용-->
+    <head>
+        <title>스타일 속성 변경하기</title>
+        <meta keyword = "스타일 속성 변경">
+        <meta charset = "UTF-8">
+    </head>
+
+    <body id="background">
+    </body>
+    
+    <script type="text/javascript">
+        function changeColor(id, color) {
+            document.getElementById(id).style.background = color;
+        }
+    </script>
+
+    Background:
+    <button onclick = "changeColor('background', 'red');"> Red </button>
+    <button onclick = "changeColor('background', 'blue');"> Blue </button>
+    <br/>
+</html>

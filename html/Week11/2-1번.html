@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    
+    </head>
+
+    <body>
+        <form action="">
+            <input id="dept" type="text" name="department" value="computer science" />
+        </form>
+                
+                
+        <script type="text/javascript">
+            var dom = document.getElementsByName("department")[0];
+            alert(dom.value);
+            var newValue = prompt("Type new value of text box", "");
+            dom.value = newValue;
+        </script>
+
+    </body>
+</html>

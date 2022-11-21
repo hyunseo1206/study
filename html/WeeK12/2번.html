@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>계산기 만들기</title>
+    <meta keyword = "계산기 만들기">
+    <meta charset = "UTF-8">
+  </head>
+    <body>
+        <form>
+            <input id="op1" type="text" size="2">
+            <select id="operator">
+              <option value="plus">+</option>
+              <option value="minus">-</option>
+              <option value="multiply">*</option>
+              <option value="divide">/</option>
+            </select>
+            <input id="op2" type="text" size ="2">
+            <input type="button" id="operation" value="=" onclick="calc();">
+            <input id="result" type="text" size="2"/>
+          </form>
+          
+          <script>          
+              function calc() {
+                    op1 = Number(document.getElementById("op1").value);
+                    op2 = Number(document.getElementById("op2").value);
+                    op = document.getElementById("operator").value;
+                
+                    if (op == "plus") text = op1 + op2;
+                    else if (op == "minus") text = op1 - op2;
+                    else if (op == "multiply") text = op1 * op2;
+                    else text = op1 / op2;
+                
+                    result = document.getElementById("result").value = text;
+                }
+          </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>무지개 색깔</title>
+        <meta charset = "UTF-8">
+        <meta keyword = "무지개 색깔"> 
+
+        <script type = "text/javascript">
+            function drawRainbowLine(canvas, x, y, radius, color) {
+                canvas.beginPath();
+                canvas.arc(x, y, radius, 0, 1 * Math.PI, true);      
+                canvas.lineWidth = 20;                          
+                canvas.strokeStyle = color;                  
+                canvas.stroke();     
+            }
+
+            function drawRainbow (canvas, x, y) {
+                var startX = 300;
+                var startY = 300;
+                var radius = 200;
+
+                var colors=["red", "orange", "yellow", "green", "blue", "navy", "purple"];
+                var x = startX;
+                var y = startY;
+                            
+                canvas.beginPath();
+                canvas.rect(0, 0, 800, 400);
+                canvas.fillStyle="white";
+                canvas.fill();
+
+                for (i = 0; i < 7; i++) {
+                    drawRainbowLine(canvas, x, y, radius, colors[i]);
+                    radius -= 20;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <canvas id = "myCanvas" width = "600" height = "400"></canvas>
+        <script type = "text/javascript">
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            drawRainbow(context);
+
+            var dataURL = canvas.toDataURL();
+            document.getElementById("canvasImage").src = dataURL;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      #name1 {text-align: center;}
+      #name2 {text-align: center;}
+      #name3 {text-align: center;}
+    </style>
+  </head>
+    <body>
+        <table>
+        <tr>
+            <td>
+                <figure>
+                    <button type="button" onclick="btnClick(0)">
+                        <img src="https://pbs.twimg.com/media/FByhnGCVkAEYDsg?format=jpg&name=large" width="200">
+                    </button>
+                </figure>
+              <div id="name1" text-align: ></div>
+            </td>
+            <td>
+              <figure>
+                <button type="button" onclick="btnClick(1)">
+                      <img src="https://image-notepet.akamaized.net/resize/620x-/seimage/20190419%2F0a01a9dd0776f65560121fbf6e4920ec.jpg" width="200">
+                </button>
+              </figure>
+              <div id="name2"></div>
+            </td>
+            <td>
+              <figure>
+                  <button type="button" onclick="btnClick(2)">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStTt4ZNbP46VOyGCtnyC9ezSEQXPr80qT6Cw&usqp=CAU" width="200">
+                  </button>
+                </figure>
+              <div id="name3"></div>
+              </td>
+        </tr>
+        </table>
+        <script type ="text/javascript">
+            var name_arr = ['','',''];
+            function btnClick(num){
+                var input = prompt("고양이의 이름을 지어주세요.");
+                name_arr[num] = input;
+                
+                var name1 = document.getElementById("name1");
+                var name2 = document.getElementById("name2");
+                var name3 = document.getElementById("name3");
+                var text1 = name_arr[0];
+                var text2 = name_arr[1];
+                var text3 = name_arr[2];
+              
+                name1.innerHTML = text1;
+                name2.innerHTML = text2;
+                name3.innerHTML = text3;
+            }
+        </script>
+    </body>
+</html>
